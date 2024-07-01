@@ -1,5 +1,3 @@
-Voici un exemple de fichier README pour votre application DexApp :
-
 # DexApp
 
 DexApp est une application destinée aux développeurs, offrant une multitude de fonctionnalités pour accélérer le lancement de projets et fournir des outils pratiques au quotidien.
