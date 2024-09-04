@@ -15,7 +15,7 @@ DexApp est une application destinée aux développeurs, offrant une multitude de
 
    ```bash
    git clone https://github.com/MatthiasCaroux/StartAppInstaller.git
-   cd StartAppInstaller
+   cd DexAppInstaller
    ```
 
 2. Assurez-vous d'avoir JavaFX installé.
