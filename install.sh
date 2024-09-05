@@ -34,32 +34,32 @@ total_duration=5  # Ajuste cette valeur pour changer la vitesse de la barre de p
 progress_bar $total_duration &
 
 # Créer un nouveau dossier dans le répertoire personnel de l'utilisateur
-mkdir -p "$USER_HOME/FastStartApp"
+mkdir -p "$USER_HOME/DexApp"
 sleep 1  # Simuler une durée de traitement
 
 # Déplacer l'image dans le nouveau dossier
-cp fsa.png "$USER_HOME/FastStartApp"
+cp dexicon.png "$USER_HOME/DexApp"
 sleep 1  # Simuler une durée de traitement
 
 # Déplacer le fichier jar dans le nouveau dossier
-cp ./FastStartApp-1.0.jar "$USER_HOME/FastStartApp"
+cp ./FastStartApp-1.0.jar "$USER_HOME/DexApp"
 sleep 1  # Simuler une durée de traitement
 
 # Créer le fichier .desktop avec le chemin correct
-cat <<EOL > "$USER_HOME/Bureau/FSA.desktop"
+cat <<EOL > "$USER_HOME/Bureau/DexApp.desktop"
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=FastStartApp
+Name=DexApp
 Comment=Lancer l'application Java avec JavaFX
-Exec=java --module-path /usr/share/openjfx/lib --add-modules javafx.controls,javafx.fxml -jar $USER_HOME/FastStartApp/FastStartApp-1.0.jar
-Icon=$USER_HOME/FastStartApp/fsa.png
+Exec=java --module-path /usr/share/openjfx/lib --add-modules javafx.controls,javafx.fxml -jar $USER_HOME/DexApp/FastStartApp-1.0.jar
+Icon=$USER_HOME/DexApp/dexicon.png
 Terminal=false
 EOL
 sleep 1  # Simuler une durée de traitement
 
 # Rendre le fichier .desktop exécutable
-chmod +x "$USER_HOME/Bureau/FSA.desktop"
+chmod +x "$USER_HOME/Bureau/DexApp.desktop"
 sleep 1  # Simuler une durée de traitement
 
 # Attendre que la barre de progression finisse
